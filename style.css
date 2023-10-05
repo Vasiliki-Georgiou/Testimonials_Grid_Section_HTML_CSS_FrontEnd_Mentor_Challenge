@@ -55,13 +55,13 @@ main .testimonial-1 {
 
 .user-info {
     display: flex;
+    justify-content: space-between;
+    width: 60%;
 }
 
 .user-info div:first-child {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin-right: 25px;
 }
 
 .user-info div:first-child img {
@@ -125,3 +125,14 @@ article .user-experience p:last-child {
     background-color: var(--primary-very-dark-blackish-blue);
 }
 
+/* Media Query Styles */
+
+@media(min-width: 768px) {
+    main article {
+        width: 500px;
+    }
+
+    .user-info div:first-child {
+        /* margin-right: 60px; */
+    }
+}
