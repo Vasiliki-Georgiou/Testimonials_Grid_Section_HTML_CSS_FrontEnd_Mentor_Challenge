@@ -131,8 +131,52 @@ article .user-experience p:last-child {
     main article {
         width: 500px;
     }
+}
 
-    .user-info div:first-child {
-        /* margin-right: 60px; */
+@media(min-width: 1024px) {
+    main {
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+            'top top  middle right'
+            'left center center right';
+    }
+
+    main article {
+        width: 250px;
+        margin: 0;
+    }
+
+    article strong,
+    article small {
+        font-size: 12px;
+    }
+
+    .testimonial-1 {
+        grid-area: top; 
+        width: 500px;
+    }
+
+    .testimonial-2 {
+        grid-area: middle;
+    }
+
+    .testimonial-3 {
+        grid-area: left;
+    }
+
+    .testimonial-4 {
+        grid-area: center;
+        width: 500px;
+    }
+
+    .testimonial-5 {
+        grid-area: right;
+    }
+
+    @media(min-width: 1440px) {
+        main article {
+            width: 330px;
+        }
     }
 }
